@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+### Changed
+- Requires `passport ^0.2` (the first published release of the core; `^0.1` matched no tag).
+
 ### Security
 - An `hd` login parameter (`WithHostedDomain`, or `WithAuthParam("hd", …)`) is now enforced on
   the profile's `hd` claim (`ErrWrongDomain`); before, it only filtered Google's account
