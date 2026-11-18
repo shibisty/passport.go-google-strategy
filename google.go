@@ -1,5 +1,5 @@
 // Package google implements login with Google (OAuth2 + OpenID Connect userinfo).
-// gtr package: passport-google.
+// gtr package: @passport/google.
 //
 //	a.Use(google.New(clientID, clientSecret, "https://app.example.com/auth/google/callback"))
 //
@@ -13,7 +13,7 @@ import (
 	"net/http"
 
 	"passport"
-	oauth2 "passport-oauth2"
+	oauth2 "passport/oauth2"
 )
 
 // Default Google endpoints.

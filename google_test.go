@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"testing"
 
-	google "passport-google"
-	"passport-oauth2/oauth2test"
+	google "passport/google"
+	"passport/oauth2/oauth2test"
 )
 
 func TestCallback(t *testing.T) {

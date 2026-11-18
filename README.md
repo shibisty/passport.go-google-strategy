@@ -1,20 +1,20 @@
-# passport-google
+# @passport/google
 
 Google login for [passport](https://github.com/shibisty/passport.go). Built on
-[`passport-oauth2`](https://github.com/shibisty/passport.go-oauth2-strategy).
+[`@passport/oauth2`](https://github.com/shibisty/passport.go-oauth2-strategy).
 
 ## Installation
 
 ```bash
-gtr add github:shibisty/passport.go github:shibisty/passport.go-google-strategy
+gtr add passport @passport/google
 ```
 
 `passport` is a peer dependency (`^0.1`): the application adds it, and every strategy
-plugs into the same `Authenticator`. `passport-oauth2` comes along as a dependency.
+plugs into the same `Authenticator`. `@passport/oauth2` comes along as a dependency.
 
 ## Usage
 
-Import as `google "passport-google"` (Go package `google`), next to `"passport"`.
+Import as `google "passport/google"` (Go package `google`), next to `"passport"`.
 
 ```go
 a.Use(google.New(clientID, clientSecret, "https://app.example/auth/google/callback"))
@@ -34,7 +34,7 @@ Get the credentials in the [Google Cloud Console](https://console.cloud.google.c
 - `google.WithOpenID(stateKey)` — PKCE and a verified id_token (OpenID Connect) instead of
   the userinfo request; pass `state` to `Callback` and give every instance the same key.
 
-Login handlers and CSRF protection work as described in the `passport-oauth2` README.
+Login handlers and CSRF protection work as described in the `@passport/oauth2` README.
 
 ## Tests
 
