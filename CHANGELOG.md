@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.1 — 2026-11-19
+
 ### Changed
 - Renamed from `passport-google` to `@passport/google` (gtr ADR-0012): `gtr add @passport/google`, `import "passport/google"`; published to the gtr registry. Dependencies on other passport packages are registry ranges (`^0.2`) instead of `github:` sources.
 
